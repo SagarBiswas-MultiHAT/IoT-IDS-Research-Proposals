@@ -1,4 +1,4 @@
-﻿name: Build / CI
+name: Build / CI
 
 on:
   push:
@@ -16,8 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate repository essentials
+      - name: Validate repository essentials and licensing integrity
         run: |
           test -f README.md
           test -f LICENSE
-          echo "Repository checks passed."
+          test -f LICENSE-DOCS
+          test -f CITATION.cff
+          echo "Repository essentials and licensing checks passed."

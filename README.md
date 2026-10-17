@@ -6,7 +6,10 @@
 
 <br>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Proposals License: CC BY-SA 4.0](https://img.shields.io/badge/Proposals-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE-DOCS)
+[![Code License: MIT](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
+[![Citation: CFF](https://img.shields.io/badge/Cite%20with-CITATION.cff-informational.svg)](CITATION.cff)
+[![DOI: Zenodo](https://img.shields.io/badge/DOI-Zenodo%20(Ready)-blue.svg)](https://zenodo.org/)
 [![Research Tracks](https://img.shields.io/badge/Research%20Tracks-3%20Proposals-blue.svg)](#-research-tracks--taxonomy)
 [![Hardware Targets](https://img.shields.io/badge/Hardware-Raspberry%20Pi%204%20%7C%20ESP32-red?logo=raspberrypi&logoColor=white)](https://www.raspberrypi.com/)
 [![Languages](https://img.shields.io/badge/Stack-C11%20%7C%20Python%203.11-3776AB?logo=python&logoColor=white)](https://python.org)
@@ -25,7 +28,8 @@
 [Hardware Ecosystem](#-hardware-testbed--specifications) •
 [Monorepo Structure](#-repository-layout) •
 [Roadmap](#-unified-research--implementation-roadmap) •
-[Documentation Index](#-documentation-index)
+[Documentation Index](#-documentation-index) •
+[Citation & License](#-citation-license--academic-integrity)
 
 </div>
 
@@ -242,7 +246,9 @@ The research proposals in this repository are designed for validation on realist
 ```text
 IoT-IDS-Research-Proposals/
 ├── README.md                                  # Central research portal and cross-proposal navigation
-├── LICENSE                                    # Open-source MIT License
+├── LICENSE                                    # Open-source MIT License (code, scripts, configs)
+├── LICENSE-DOCS                               # Creative Commons CC BY-SA 4.0 (proposals, diagrams)
+├── CITATION.cff                               # Academic citation metadata for GitHub and Zenodo
 │
 ├── Mini-IDS_Project_Proposal/                 # Track 1: Embedded Baseline Prototype (Generation 1)
 │   ├── Mini-IDS_Personal_Project_Proposal.md  # Original personal project proposal text
@@ -311,9 +317,52 @@ We welcome discussions, reviews, and collaborative research contributions from e
 
 ---
 
-## 📄 License
+## ⚖️ Citation, License & Academic Integrity
 
-All research proposals and documentation in this repository are distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
+This repository contains original cybersecurity and embedded systems research proposals authored by **Sagar Biswas ([@SagarBiswas-MultiHAT](https://github.com/SagarBiswas-MultiHAT))**. All commits and publication dates are cryptographically timestamped in git to establish verifiable prior art.
+
+### Dual-Licensing Architecture
+
+To simultaneously support open academic dissemination, protect against uncredited intellectual property theft, and ensure permissive reuse for companion software, this repository uses a dual-licensing model:
+
+* **Research Proposals, Methodologies, System Models & Diagrams:** Licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](./LICENSE-DOCS). Any sharing, adaptation, translation, or inclusion in academic papers, theses, or commercial frameworks requires prominent attribution, a direct backlink to this repository, and redistribution of derivative works under the identical CC BY-SA 4.0 license.
+* **Simulation Scripts, Configurations & Companion Code:** Licensed under the [MIT License](./LICENSE). Any companion proof-of-concept scripts, packet parsers, or hardware test configurations are covered under permissive MIT terms with a standard liability disclaimer.
+
+### How to Cite This Work
+
+If you reference, build upon, or implement any architecture, threat model, or methodology proposed in this repository for an academic thesis, peer-reviewed paper, grant application, or technical publication, **formal citation is legally and ethically mandatory under CC BY-SA 4.0 Section 3(a)**:
+
+#### 1. Instant One-Click Citation (GitHub Native)
+Click the **"Cite this repository"** button in the right-hand sidebar of this repository to export BibTeX or APA citation formats generated directly from our root [`CITATION.cff`](./CITATION.cff) file.
+
+#### 2. BibTeX Format
+```bibtex
+@misc{biswas2026iotids,
+  author       = {Biswas, Sagar},
+  title        = {IoT-IDS-Research-Proposals: Architectural & Methodological Proposals for Next-Generation IoT Intrusion Detection Systems},
+  year         = {2026},
+  month        = {2},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals}},
+  note         = {Licensed under CC BY-SA 4.0 (Proposals) and MIT (Code)}
+}
+```
+
+#### 3. APA / Academic Text Format
+> Biswas, S. (2026). *IoT-IDS-Research-Proposals: Architectural & Methodological Proposals for Next-Generation IoT Intrusion Detection Systems*. GitHub repository: https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals
+
+> [!WARNING]
+> **Anti-Plagiarism & Academic Misconduct Notice:**
+> Cloning this repository, removing author attribution, or submitting these research proposals, threat models, mathematical formulations, or architectural diagrams as your own uncredited work to university committees, conferences (e.g., IEEE, ACM), journals, or commercial publications constitutes a direct violation of international copyright law (CC BY-SA 4.0 Section 3a) and academic integrity codes. Violations will result in immediate DMCA takedown filings, public notice of infringement, and formal complaints submitted to the relevant university ethics committees, department heads, and publisher review boards.
+
+### Permanent Archival & Zenodo DOI Integration
+
+This repository is pre-configured for permanent academic indexing via [Zenodo](https://zenodo.org/) (backed by CERN and OpenAIRE):
+1. Log in to [Zenodo](https://zenodo.org/) using your GitHub account and enable the toggle for `IoT-IDS-Research-Proposals`.
+2. Create a tagged release (such as `v1.0.0`) on GitHub.
+3. Zenodo automatically captures an immutable archive snapshot of the repository and mints a permanent **Digital Object Identifier (DOI)**.
+4. The minted DOI ensures permanent citation indexing in global scientific catalogs (Google Scholar, CrossRef, OpenAIRE) and provides an unbreakable cryptographic guarantee of research priority.
 
 ---
 

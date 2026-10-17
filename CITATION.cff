@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you reference, adapt, or build upon the research proposals, threat models, or architectural designs in this repository, please cite it using the metadata below."
+title: "IoT-IDS-Research-Proposals: Architectural & Methodological Proposals for Next-Generation IoT Intrusion Detection Systems"
+type: software
+version: "2.0.0"
+date-released: "2026-02-26"
+authors:
+  - family-names: "Biswas"
+    given-names: "Sagar"
+    alias: "SagarBiswas-MultiHAT"
+    website: "https://multihat.dev"
+repository-code: "https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals"
+url: "https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals"
+license: CC-BY-SA-4.0
+keywords:
+  - iot-security
+  - intrusion-detection-system
+  - embedded-security
+  - anomaly-detection
+  - behavioral-fingerprinting
+  - edge-ai
+  - raspberry-pi
+  - esp32
+  - zero-day-detection
+  - network-security
+  - privacy-preserving
+  - federated-learning
+  - cybersecurity-research
+abstract: "A comprehensive open research monorepo containing architectural blueprints, threat models, mathematical formulations, and engineering specifications for embedded, distributed, and privacy-preserving IoT Intrusion Detection Systems. Encompasses three progressive research tracks: Mini-IDS (Generation 1 baseline with low-latency C/libpcap capture), BF-IDS (Generation 2 distributed hybrid with Isolation Forest behavioral fingerprinting and ESP32 satellite sniffers), and PPFL-IoT-IDS (Generation 3 privacy-preserving federated learning)."
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: "Biswas"
+      given-names: "Sagar"
+      alias: "SagarBiswas-MultiHAT"
+      website: "https://multihat.dev"
+  title: "IoT-IDS-Research-Proposals: Architectural and Methodological Proposals for Next-Generation IoT Intrusion Detection Systems"
+  year: 2026
+  month: 2
+  url: "https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals"
+  repository-code: "https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals"
+  license: CC-BY-SA-4.0
