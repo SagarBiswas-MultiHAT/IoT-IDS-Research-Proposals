@@ -6,11 +6,23 @@
 
 **Program**: BSc in CSE.
 
-**Team**: Sagar Biswas, \[\], \[\], \[\], \[\].
+**Team**: Sagar Biswas (Solo Project).
 
 **Supervisor**: _______.
 
 **Semester**: 2025-2026, Spring.
+
+<div align="right">
+
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/blob/main/LICENSE-DOCS"><img src="https://img.shields.io/badge/Proposals%20License-CC%20BY--SA%204.0-lightgrey.svg" alt="Proposal License: CC BY-SA 4.0"></a>&nbsp;
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals"><img src="https://img.shields.io/badge/Monorepo-IoT--IDS--Research--Proposals-blue.svg" alt="Central Monorepo"></a>
+
+</div>
+
+**Document Navigation & Formats:**
+- Central Monorepo: [IoT-IDS-Research-Proposals](../README.md)
+- Next Research Track: [Track 2: BF-IDS Technical Proposal](../BF-IDS_Project_Proposal/BF-IDS_Project_Proposal.md)
+- Printable Formats: [Formatted PDF](Mini-IDS_Personal_Project_Proposal.pdf) | [Word DOCX](Mini-IDS_Personal_Project_Proposal.docx)
 
 ## 1. Executive summary
 
@@ -240,10 +252,16 @@ mini-ids/
 **What:** A statistical measure that shows how far a value is from the average in standard deviations.\
 **Why:** It helps identify unusually high or low activity such as brute force attempts.
 
-## 15. References
+## 16. References
 
 - Original project proposal and refinement used as baseline. See the attached project document for the original scope and details.
 
-*Prepared by: Sagar Biswas and team*
+---
 
-*Date: \[\]*
+### Academic Integrity & Citation Notice
+This document represents Track 1 (Generation 1 Embedded Baseline) of the [IoT-IDS-Research-Proposals](https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals) research suite authored by **Sagar Biswas ([@SagarBiswas-MultiHAT](https://github.com/SagarBiswas-MultiHAT))**. 
+
+Licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](../LICENSE-DOCS). Any academic citation, thesis inclusion, or derivative work legally requires prominent TASL attribution and a direct backlink to the canonical repository.
+
+*Prepared by: Sagar Biswas*  
+*Date: 27-02-2026*

@@ -16,10 +16,11 @@
 
 **Quick links:**
 
-- GitHub repository: https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal
+- Central GitHub Monorepo: https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals
 - Mini-IDS baseline proposal (v1):
-  - PDF: https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/blob/main/Mini-IDS_Personal_Project_Proposal.pdf
-  - DOCX: https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/blob/main/Mini-IDS_Personal_Project_Proposal.docx
+  - Markdown: [Mini-IDS_Personal_Project_Proposal.md](../Mini-IDS_Project_Proposal/Mini-IDS_Personal_Project_Proposal.md)
+  - PDF: [Mini-IDS_Personal_Project_Proposal.pdf](../Mini-IDS_Project_Proposal/Mini-IDS_Personal_Project_Proposal.pdf)
+  - DOCX: [Mini-IDS_Personal_Project_Proposal.docx](../Mini-IDS_Project_Proposal/Mini-IDS_Personal_Project_Proposal.docx)
 
 **Document versions (included in this repo):**
 
@@ -52,11 +53,11 @@
 
 <div align="right">
 
-<a href="https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/ci.yml?branch=main&label=build" alt="Build / CI"></a>&nbsp;
-<a href="https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal?label=license" alt="License: MIT"></a>&nbsp;
-<a href="https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/issues"><img src="https://img.shields.io/github/issues/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal?label=open%20issues" alt="Open Issues"></a>&nbsp;
-<a href="https://github.com/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal/issues?q=is%3Aissue%20state%3Aclosed"><img src="https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/BF-IDS_Project_Proposal?label=closed%20issues" alt="Closed Issues"></a>&nbsp;
-<a href="https://sagarbiswas-multihat.github.io/BF-IDS_Project_Proposal/"><img src="https://img.shields.io/badge/docs-github%20pages-blue" alt="Docs"></a>
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/ci.yml?branch=main&label=build" alt="Build / CI"></a>&nbsp;
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/blob/main/LICENSE-DOCS"><img src="https://img.shields.io/badge/Proposals%20License-CC%20BY--SA%204.0-lightgrey.svg" alt="Proposal License: CC BY-SA 4.0"></a>&nbsp;
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/blob/main/LICENSE"><img src="https://img.shields.io/badge/Code%20License-MIT-green.svg" alt="Code License: MIT"></a>&nbsp;
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/issues"><img src="https://img.shields.io/github/issues/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals?label=open%20issues" alt="Open Issues"></a>&nbsp;
+<a href="https://github.com/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals/issues?q=is%3Aissue%20state%3Aclosed"><img src="https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/IoT-IDS-Research-Proposals?label=closed%20issues" alt="Closed Issues"></a>
 
 </div>
 
@@ -307,25 +308,37 @@ No paid services are required. GeoLite2, Mosquitto MQTT broker, and all notifica
 
 ## 12. Repository Layout
 
-### Current repository contents (this proposal repository)
+### Current repository contents (monorepo structure)
 
 ```text
-BF-IDS_Project_Proposal/
+IoT-IDS-Research-Proposals/
+|-- README.md                                  # Central research portal and cross-proposal navigation
+|-- LICENSE                                    # Open-source MIT License (code, scripts, configs)
+|-- LICENSE-DOCS                               # Creative Commons CC BY-SA 4.0 (proposals, diagrams)
+|-- CITATION.cff                               # Academic citation metadata for GitHub and Zenodo
 |
-|-- README.md
-|-- LICENSE
-|-- Mini-IDS_Personal_Project_Proposal.docx
-|-- Mini-IDS_Personal_Project_Proposal.pdf
-|-- docs/
-|   |-- BF-IDS_Project_Proposal.md
+|-- Mini-IDS_Project_Proposal/                 # Track 1: Embedded Baseline Prototype (Generation 1)
+|   |-- Mini-IDS_Personal_Project_Proposal.md  # Original personal project proposal text
+|   |-- Mini-IDS_Personal_Project_Proposal.pdf # Printable PDF document
+|   |-- Mini-IDS_Personal_Project_Proposal.docx# Word version
 |   |-- assets/
+|       |-- Architecture_Diagram.png           # Standalone baseline architecture
+|       |-- Sequence_Diagram.png               # Standalone baseline sequence flow
+|
+|-- BF-IDS_Project_Proposal/                   # Track 2: Behavioral Fingerprinting Embedded IDS (Generation 2)
+|   |-- BF-IDS_Project_Proposal.md             # Complete 600+ line technical proposal (this document)
+|   |-- assets/                                # High-resolution architectural schematics
 |       |-- architecture_diagram_new.png
 |       |-- fingerprint_engine_diagram_new.png
 |       |-- sequence_diagram_part1_new.png
 |       |-- sequence_diagram_part2_new.png
+|
+|-- PPFL-IoT-IDS_Research_Proposal/            # Track 3: Privacy-Preserving Federated Learning (Generation 3)
+|   |-- PPFL-IoT-IDS_Research_Proposal.md      # Research proposal draft
+|
 |-- .github/
 |   |-- workflows/
-|       |-- ci.yml
+|       |-- ci.yml                             # Automated documentation and licensing integrity CI
 ```
 
 ### Planned implementation repository layout (future work)
